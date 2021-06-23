@@ -1,3 +1,8 @@
+include ../elements/wrapper/wrapper.pug
+include ../elements/textBox/textBox.pug
+include ../elements/myBytton/myBytton.pug
+//- include ../elements/myForm/myForm.pug
+
 doctype html
 html(lang="en")
   head
@@ -7,5 +12,13 @@ html(lang="en")
     title Document
   body.page__body
     header.page__header 
-    main.page__main 
+    main.page__main
+      form.myForm
+        +textBox("ИНН*", 50, 20, 5)
+        +textBox("Тип БГ*", 50, 20, 5)
+        +textBox("№ закупки (ЕИС)*", 50, 20, 5)
+        +textBox("сумма гарантии:*", 50, 20, 5)
+        +myButton("Рассчитать гарантийный рейтинг", 300, 35)
+      +wrapper(10, 10)
+        .smthDiv
     footer.page__footer

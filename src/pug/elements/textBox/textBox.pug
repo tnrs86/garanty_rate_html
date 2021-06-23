@@ -1,6 +1,9 @@
 //- миксин-текстовое поле
 //- label - заголовок
-mixin textBox(label, hint, width, height, labelBoxGap)
+mixin textBox(label, width, height, labelBoxGap)
+  - var myStyle=""
+  -myStyle="width:" + width + "px; height:" + height + "px"
   .textBox
-    label.textBox_label label
-    input(type="text", name="", class="textBox_input") hint
+    label.textBox_label= label
+    
+    input(type="text", name="", class="textBox_input", style= myStyle)
