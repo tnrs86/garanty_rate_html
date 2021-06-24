@@ -6,6 +6,7 @@ include ../elements/myBytton/myBytton.pug
 doctype html
 html(lang="en")
   head
+    link(rel="stylesheet", href="../../style/page.scss")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -19,6 +20,7 @@ html(lang="en")
         +textBox("№ закупки (ЕИС)*", 50, 20, 5)
         +textBox("сумма гарантии:*", 50, 20, 5)
         +myButton("Рассчитать гарантийный рейтинг", 300, 35)
-      +wrapper(10, 10)
-        .smthDiv
+      .page__indicator
+        .page__scale
+        div(class="page__arrow" id="arrow" style="transform: rotate(60deg)")
     footer.page__footer
