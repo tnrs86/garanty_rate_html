@@ -1,19 +1,33 @@
 .page__problemContainer {
   display: flex;
   width: 100%;
+  color: #666;
+  margin: 10px 0;
+  height: 30px;
+  // padding: 10px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+  align-items: center;
+  height: 40px;
+  //box-sizing: border-box;
+}
+.page__problemHeaderContainer {
+  // padding: 5px 10px 5px 10px;
+  display: flex;
 }
 
 .page__problemNameHeader, .page__problemNameContainer {
   width: 70%;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  margin: 10px;
+  // border-left: 1px solid black;
+  // border-bottom: 1px solid black;
+  // border-right: 1px solid black;
 }
 
 .page__problemValyueHeader, .page__problemValueContainer {
   width: 30%;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  // border-right: 1px solid black;
+  // border-bottom: 1px solid black;
 }
 
 // .page__problemNameContainer {
@@ -27,6 +41,11 @@
   // width: 30%;
   // border-right: 1px solid black;
   // border-bottom: 1px solid black;
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
   &_green {
     background-color: green;
   }

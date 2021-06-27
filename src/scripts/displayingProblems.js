@@ -1,5 +1,5 @@
 const lowProblem = "low";
-const midProblem = "mod";
+const midProblem = "mid";
 const highProblem = "high";
 
 export default function displayingProblems(problems = {}) {
@@ -17,20 +17,20 @@ export default function displayingProblems(problems = {}) {
   problemsKeyArray = Object.keys(problems);
 
   // заголовок
-  problemItemContainer = document.createElement("div");
-  problemItemContainer.className = "page__problemContainer"
+  // problemItemContainer = document.createElement("div");
+  // problemItemContainer.className = "page__problemHeaderContainer"
 
-  problemNameContainer = document.createElement("div");
-  problemNameContainer.className = "page__problemNameHeader"
-  problemNameContainer.innerText = "ФАКТОР"
+  // problemNameContainer = document.createElement("div");
+  // problemNameContainer.className = "page__problemNameHeader"
+  // problemNameContainer.innerText = "ФАКТОР"
 
-  problemValueContainer = document.createElement("div");
-  problemValueContainer.className = "page__problemValyueHeader"
-  problemValueContainer.innerText = "КРИТИЧНОСТЬ"
+  // problemValueContainer = document.createElement("div");
+  // problemValueContainer.className = "page__problemValyueHeader"
+  // problemValueContainer.innerText = "КРИТИЧНОСТЬ"
 
-  problemSContainer.appendChild(problemItemContainer)
-  problemItemContainer.appendChild(problemNameContainer)
-  problemItemContainer.appendChild(problemValueContainer)
+  // problemSContainer.appendChild(problemItemContainer)
+  // problemItemContainer.appendChild(problemNameContainer)
+  // problemItemContainer.appendChild(problemValueContainer)
 
   problemsKeyArray.forEach(key => {
     problemItemContainer = document.createElement("div");

@@ -1,0 +1,21 @@
+.my_button {
+  cursor: pointer;  
+  font-family: 'Helvetica Neue Cyr Roman';
+  color: #ef3961;
+  border: 2px solid #ef3961;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 14px 43px 12px 43px;
+  transition: 0.3s all ease;
+  box-sizing: border-box;
+  text-align: center;
+  
+  &:hover {
+    color: white;
+    background-color: #ef3961 ;
+  }
+}
+
+.my_button_hide {
+  display: none;
+}

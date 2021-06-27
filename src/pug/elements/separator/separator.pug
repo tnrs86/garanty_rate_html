@@ -1,0 +1,13 @@
+//- margin_top
+//- margin_bottom
+//- width
+mixin separator(props={})
+  -var myStyle=""
+  if props.margin_top
+    -myStyle+= ";margin-top:"+ props.margin_top
+  if props.margin_bottom
+    -myStyle+= ";margin-bottom:"+ props.margin_bottom
+  if props.width
+    -myStyle+= ";width:"+ props.width
+  
+  div(class= "separator" style= myStyle)

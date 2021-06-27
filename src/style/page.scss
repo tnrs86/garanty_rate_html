@@ -52,6 +52,7 @@
   // justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .page__header {
@@ -75,7 +76,7 @@
 }
 
 .page__input {
-  border: 1px solid black;
+  border: 2px solid #d9d9d9;
   box-sizing: border-box;
   padding: 0;
   border-radius: 0;
@@ -85,6 +86,10 @@
   background-image:none;
   background-color:transparent;
   box-shadow: none;
+
+  &_warning {
+    border: 1px solid red;
+  }
 }
 
 .page__label {
@@ -94,11 +99,6 @@
   border: 1px solid black;
   margin: 10px 0 10px;
   text-align: center;
-}
-
-.page__button {
-  background: yellow;
-  border: 1px solid black;
 }
 
 .page__wide-container {
@@ -122,5 +122,16 @@
 
 #problemsContainer {
   width: 70%;
-
 }
+
+// .my_button {
+//   cursor: pointer;
+//   background: #ffffff url("../../pictures/btn_arrow.png") 77% 50% no-repeat;
+//   font-family: 'Helvetica Neue Cyr Roman';
+//   color: #ef3961;
+//   border: 2px solid #ef3961;
+//   font-size: 16px;
+//   border-radius: 5px;
+//   padding: 14px 72px 12px 43px;
+//   transition: 0.3s all ease;
+// }

@@ -1,5 +1,9 @@
 mixin myButton(props={})
   - var myStyle=""
-  -myStyle="width:" + props.width + "; height:" + props.height
+  if props.height
+    -myStyle+=  "; height:" + props.height
+  if props.width
+     -myStyle+=  "width:" + props.width
 
-  input(id= props.id, class="myBytton page__button", type="submit", style= myStyle, value= props.label, form= props.formID)
+  div(class="my_button", id= props.id,   style= myStyle)= props.label 
+  //-, value= props.label, form= props.formID) type="submit",
