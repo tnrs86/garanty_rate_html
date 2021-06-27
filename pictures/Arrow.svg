@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 415.22982 1431.7028"
+   width="415.22983"
+   height="1431.7028"
+   version="1.1"
+   id="svg847"
+   sodipodi:docname="Arrow.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview849"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.52293071"
+     inkscape:cx="606.19886"
+     inkscape:cy="356.64381"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g845" />
+  <desc
+     id="desc824">Arrow.dxf - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
+  <defs
+     id="defs839">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path826" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path829" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path831" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path833" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g843"
+     transform="translate(207.87402,101.43882)">
+    <path
+       d="M 204.85404,1087.2149 0,-101.43882 -204.85404,1087.2149 l -3.01998,35.2939 3.01628,35.2942 8.96493,34.2697 14.65328,32.2499 19.91611,29.2938 24.60062,25.4871 28.57079,20.9401 31.711298,15.7852 33.930989,10.1719 35.165387,4.2632 35.378652,-1.7693 34.56459,-7.7503 32.746843,-13.5065 29.978191,-18.8702 26.33903,-23.6862 21.93504,-27.8143 16.8941,-31.1347 11.36259,-33.551 5.50112,-34.9931 -0.52007,-35.419 z m -130.273151,118.9806 -21.276968,14.9276 -24.143038,9.6259 -25.710974,3.8066 -25.896469,-2.2174 -24.689553,-8.1222 -22.155117,-13.5903 -18.429435,-18.3275 -13.712825,-22.0795 -8.25891,-24.6442 -2.36092,-25.8837 3.66402,-25.7317 9.491936,-24.196 14.809499,-21.3594 19.330774,-17.3743 22.812662,-12.455 25.067949,-6.866 25.975372,-0.9078 25.486138,5.0991 23.626555,10.8319 20.496607,15.9823 16.26459,20.2733 11.158048,23.4743 5.45156,25.413 -0.54805,25.9855 -6.5182,25.1606 -12.137865,22.983 -17.104905,19.5695 z m -46.847566,-52.5605 9.59039,-12.5616 4.224412,-15.229 -1.748903,-15.707 -7.470781,-13.9269 -12.118595,-10.1444 -15.024137,-4.9035 -15.769678,1.0423 -14.248036,6.8383 -10.677974,11.6512 -5.572755,14.789 0.333653,15.8006 6.19209,14.5405 11.1603,11.19 14.52401,6.2308 15.799622,0.3757 14.803746,-5.5334 z"
+       style="fill:#000000"
+       id="path841" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Ð¡Ð¸ÑÑÐµÐ¼Ð½ÑÐ¹ ÑÐ»Ð¾Ð¹"
+     id="g845"
+     transform="translate(207.87402,101.43882)" />
+</svg>

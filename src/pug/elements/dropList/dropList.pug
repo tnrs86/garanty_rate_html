@@ -1,0 +1,13 @@
+mixin dropList(props = {values})
+  - var inputStyle=""
+  -myStyle="width:" + props.width + "; height:" + props.height
+  - var totalStyle=""
+  -totalStyle="width:"+ props.totalWidth
+  
+  div(class="dropList", style=totalStyle)
+    label.dropList_label= props.label
+    
+    //- input(type="text", name="", class="textBox_dropList", style= myStyle)
+    select(type="text", class="dropList_list page__input", style= myStyle, form= props.formID, name= props.name, id= props.name)
+      each val in props.values 
+        option= val

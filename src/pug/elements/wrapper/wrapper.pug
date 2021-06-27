@@ -1,28 +1,30 @@
-mixin wrapper(m_left,  m_right,  m_top,  m_bottom,  p_left,  p_right,  p_top,  p_bottom)
+//- props.m_left,  props.m_right,  props.m_top,  props.m_bottom,  props.p_left,  props.p_right,  props.p_top,  props.p_bottom
+
+mixin wrapper(props={})
   - var myStyle=""
-  if m_left != undefined
-    - myStyle+="margin-left:" + m_left + "px;"
+  if props.m_left != undefined
+    - myStyle+="margin-left:" + props.m_left + "px;"
   
-  if m_right != undefined
-    - myStyle+="margin-right:" + m_right + "px;"
+  if props.m_right != undefined
+    - myStyle+="margin-right:" + props.m_right + "px;"
   
-  if m_top != undefined
-    - myStyle+="margin-top:" + m_top + "px;"
+  if props.m_top != undefined
+    - myStyle+="margin-top:" + props.m_top + "px;"
   
-  if m_bottom != undefined
-    - myStyle+="margin-bottom:" + m_bottom + "px;"
+  if props.m_bottom != undefined
+    - myStyle+="margin-bottom:" + props.m_bottom + "px;"
   
-  if p_left != undefined
-    - myStyle+="padding-left:" + p_left + "px;"
+  if props.p_left != undefined
+    - myStyle+="padding-left:" + props.p_left + "px;"
   
-  if p_right != undefined
-    - myStyle+="padding-right:" + p_right + "px;"
+  if props.p_right != undefined
+    - myStyle+="padding-right:" + props.p_right + "px;"
   
-  if p_top != undefined
-    - myStyle+="padding-top:" + p_top + "px;"
+  if props.p_top != undefined
+    - myStyle+="padding-top:" + props.p_top + "px;"
   
-  if p_bottom != undefined
-    - myStyle+="padding-bottom:" + p_bottom + "px;"    
+  if props.p_bottom != undefined
+    - myStyle+="padding-bottom:" + props.p_bottom + "px;"    
   
   div(class="wrapper" style= myStyle)
     block

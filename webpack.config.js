@@ -8,7 +8,8 @@ const prodConfig = {
   entry: './src/scripts/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    library: 'siteMechanics'
   },
   module: {
     rules: [{

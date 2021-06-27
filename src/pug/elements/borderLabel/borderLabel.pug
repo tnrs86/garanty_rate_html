@@ -1,0 +1,22 @@
+//- color
+//- width
+//- wborder
+//- bold
+mixin borderLabel(props={})
+  - var className= "borderLabel"
+  if props.color
+    - className += " " + className + '_' + props.color
+  
+  if props.bold
+    - className += " " + "borderLabel_bold"
+  - var myStyle=""
+  
+  if props.border
+    - className += " " + "borderLabel_border"
+  
+  - var myStyle=""
+  if props.width
+    -myStyle+= myStyle + "; width:" + props.width
+
+    
+  div(class= className style= myStyle)= props.text

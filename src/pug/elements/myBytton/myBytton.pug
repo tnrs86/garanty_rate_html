@@ -1,5 +1,5 @@
-mixin myButton(label, width, height)
+mixin myButton(props={})
   - var myStyle=""
-  -myStyle="width:" + width + "px; height:" + height + "px"
+  -myStyle="width:" + props.width + "; height:" + props.height
 
-  input(type="button", name="", class="myBytton", style= myStyle, value= label)
+  input(id= props.id, class="myBytton page__button", type="submit", style= myStyle, value= props.label, form= props.formID)

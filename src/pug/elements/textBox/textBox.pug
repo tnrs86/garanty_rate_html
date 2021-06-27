@@ -1,9 +1,14 @@
 //- миксин-текстовое поле
 //- label - заголовок
-mixin textBox(label, width, height, labelBoxGap)
-  - var myStyle=""
-  -myStyle="width:" + width + "px; height:" + height + "px"
-  .textBox
-    label.textBox_label= label
+//- label, totalWidth, width, height, labelBoxGap
+mixin textBox(props = {})
+  - var inputStyle=""
+  -myStyle="width:" + props.width + "; height:" + props.height
+  - var totalStyle=""
+  -totalStyle="width:"+ props.totalWidth
+  
+  div(class="textBox", style=totalStyle)
     
-    input(type="text", name="", class="textBox_input", style= myStyle)
+    label.textBox_label= props.label
+    
+    input(name= props.name, id= props.name, type="text", class="textBox_input page__input", style= myStyle, form= props.formID)

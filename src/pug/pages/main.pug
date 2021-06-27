@@ -1,7 +1,11 @@
 include ../elements/wrapper/wrapper.pug
 include ../elements/textBox/textBox.pug
 include ../elements/myBytton/myBytton.pug
+include ../elements/dropList/dropList.pug
+include ../elements/borderLabel/borderLabel.pug
 //- include ../elements/myForm/myForm.pug
+
+-var formID = "form_1"
 
 doctype html
 html(lang="en")
@@ -13,14 +17,52 @@ html(lang="en")
     title Document
   body.page__body
     header.page__header 
+    
     main.page__main
-      form.myForm
-        +textBox("ИНН*", 50, 20, 5)
-        +textBox("Тип БГ*", 50, 20, 5)
-        +textBox("№ закупки (ЕИС)*", 50, 20, 5)
-        +textBox("сумма гарантии:*", 50, 20, 5)
-        +myButton("Рассчитать гарантийный рейтинг", 300, 35)
-      .page__indicator
-        .page__scale
-        div(class="page__arrow" id="arrow" style="transform: rotate(60deg)")
-    footer.page__footer
+      .page__borderContainer
+        .page__container
+          form.page__form(id= formID)
+          input(id="client_name" class="page__input" form=formID name="client_name" placeholder="Наименование заказчика")
+          .page__flex-wrapper
+            +textBox({name: "inn", label: "ИНН*", width: "40%", height: "20px", labelBoxGap: 5, totalWidth: "45%", formID: formID})
+            +textBox({name: "num_purhase", label: "№ закупки (ЕИС)*", width: "40%", height: "20px", labelBoxGap: 5, totalWidth: "45%", formID: formID})
+          .page__flex-wrapper
+            +dropList({name: "type_BG", label: "Тип БГ*", width: "40%", height: "20px", labelBoxGap: 5, totalWidth: "45%", values: [1, 2, 3], formID: formID})          
+            +textBox({name: "sum_warranty", label: "сумма гарантии:*", width: "40%", height: "20px", labelBoxGap: 5, totalWidth: "45%", formID: formID})
+          +wrapper({m_top: 20, m_bottom: 20})
+            +myButton({label: "Рассчитать гарантийный рейтинг", width: "100%", height: "35px", id: "btn_calc_rating"})
+          span *обязательные поля
+      
+      .page__borderContainer 
+        +wrapper({p_top: 20, p_bottom: 10})
+          .page__flex-wrapper.page__vertical-flex          
+            .page__indicator
+              .page__scale
+              div(class="page__arrow" id="arrow")
+            div.page__label#warrantyValue -
+            div ВАШ БАЛЛ      
+      //- .page__borderContainer 
+      //-   .page__wide-container Подробности:
+          //- .page__flex-wrapper
+          //-   +borderLabel({text: "Фактор", width: "70%", bold: 1})
+          //-   +borderLabel({text: "Критичность", width: "30%", bold: 1})
+          //- .page__flex-wrapper
+          //-   +borderLabel({text: "1. Сообщение для пользователя", color: "red", width: "70%", border: 1})
+          //-   +borderLabel({text: "Высокая", color: "red", width: "30%", border: 1})
+          //- .page__flex-wrapper
+          //-   +borderLabel({text: "2. Сообщение для пользователя", color: "yellow", width: "70%", border: 1})
+          //-   +borderLabel({text: "Средняя", color: "yellow", width: "30%", border: 1})
+          //- .page__flex-wrapper
+          //-   +borderLabel({text: "3. Сообщение для пользователя", color: "green", width: "70%", border: 1})
+          //-   +borderLabel({text: "Низкая", color: "green", width: "30%", border: 1})   
+    footer.page__footer 
+      .page__borderContainer            
+        .page__container
+          +wrapper({m_top: 20, m_bottom: 20})
+            .page__flex-wrapper
+              +myButton({label: "Получить расшифровку", width: "40%", height: "35px", id: "btn_get_descript"})
+              +myButton({label: "Оставить заявку", width: "40%", height: "35px", formID: formID, id: "btn_send_application"})
+      .page__borderContainer
+        #problemsContainer
+  script window.init("http://httpbin.org/post")
+        

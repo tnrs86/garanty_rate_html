@@ -1,0 +1,23 @@
+.borderLabel {
+  
+
+  &_red {
+    background-color: red;
+  }
+
+  &_yellow {
+    background-color: yellow;
+  }
+
+  &_green {
+    background-color: green;
+  }
+
+  &_bold {
+    font-weight: 600;
+  }
+
+  &_border {
+    border-top: 1px solid black;
+  }
+}
