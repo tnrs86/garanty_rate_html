@@ -32,7 +32,8 @@
 }
 
 .page__container {
-  width: 500px
+  width: 500px;
+  padding-top: 10px;
 }
 .page__form {
   
@@ -43,6 +44,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  margin-top: -1px;
 }
 
 .page__body {
@@ -77,12 +79,11 @@
   box-sizing: border-box;
   padding: 0;
   border-radius: 0;
+  margin-top: -1px;
   text-align: center;
   // border-width: 1px ;
   background-image:none;
   background-color:transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -121,4 +122,5 @@
 
 #problemsContainer {
   width: 70%;
+
 }

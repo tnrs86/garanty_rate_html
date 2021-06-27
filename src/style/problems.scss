@@ -3,12 +3,30 @@
   width: 100%;
 }
 
-.page__problemNameContainer{
-  width: 70%
+.page__problemNameHeader, .page__problemNameContainer {
+  width: 70%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.page__problemValueContainer {
+.page__problemValyueHeader, .page__problemValueContainer {
   width: 30%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+// .page__problemNameContainer {
+//   width: 70%;
+//   border-left: 1px solid black;
+//   border-bottom: 1px solid black;
+//   border-right: 1px solid black;
+// }
+
+.page__problemValueContainer {
+  // width: 30%;
+  // border-right: 1px solid black;
+  // border-bottom: 1px solid black;
   &_green {
     background-color: green;
   }
