@@ -6,25 +6,42 @@ import '../pug/elements/dropList/dropList.scss';
 import '../pug/elements/borderLabel/borderLabel.scss';
 import '../style/problems.scss';
 
-
 import displayingProblems from "./displayingProblems";
 import { sendPost } from './post';
 import setRating from './setRating';
 import setIndicatorValue from './setIndicatorValue';
 import getStartValues from './getStartValues.js';
+import clearClassName from './clearClassName.js';
 
 export function init(serverURL) {
+  const addedClassName = " page__input_warning";
+
+  let inputINN = document.getElementById("inn");
+
+  inputINN.addEventListener('click', () => {
+    inputINN.className = clearClassName(inputINN.className, addedClassName)
+  })
+
+  let inputNum_purhase = document.getElementById("num_purhase");
+
+  inputNum_purhase.addEventListener('click', () => {
+    inputNum_purhase.className = clearClassName(inputNum_purhase.className, addedClassName)
+  })
+
+  let inputSum_warranty = document.getElementById("sum_warranty");
+
+  inputSum_warranty.addEventListener('click', () => {
+    inputSum_warranty.className = clearClassName(inputSum_warranty.className, addedClassName)
+  })
 
   document.getElementById("btn_get_descript").addEventListener("click", () => {
-
 
     let sendMessage = getStartValues();
 
     if (!sendMessage) return;
 
     sendPost(serverURL, sendMessage, (ansver) => {
-      // displayingProblems(ansver)
-      displayingProblems({ 1: "low", 2: "low", 3: "mid", 4: "high" })
+      displayingProblems(ansver)
     })
   })
 

@@ -1,11 +1,13 @@
+import clearClassName from './clearClassName.js';
+
 export default function getStartValues() {
   let inputINN = document.getElementById("inn");
   let inputNum_purhase = document.getElementById("num_purhase");
   let inputType_BG = document.getElementById("type_BG");
   let inputSum_warranty = document.getElementById("sum_warranty");
   let dataIsValid = true
-  let clearClassArray = [];
-  const addedClassName = " page__input_warning"
+
+  const addedClassName = " page__input_warning";
 
   if (isNaN(inputINN.value)) {
     inputINN.className = clearClassName(inputINN.className, addedClassName) + addedClassName;
@@ -37,15 +39,4 @@ export default function getStartValues() {
     "type_bg": inputType_BG.value,
     "sum_varranty": inputSum_warranty.value,
   }
-}
-
-function clearClassName(className, deletedClass) {
-  let classArray = [];
-  let savedClassName = className;
-
-  classArray = className.split(deletedClass);
-
-  if (classArray.length > 0) return classArray.join(" ");
-
-  return savedClassName
 }
