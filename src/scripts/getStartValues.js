@@ -9,23 +9,23 @@ export default function getStartValues() {
 
   const addedClassName = " page__input_warning";
 
-  if (isNaN(inputINN.value)) {
+  if (isNaN(inputINN.value) || inputINN.value == "") {
     inputINN.className = clearClassName(inputINN.className, addedClassName) + addedClassName;
     dataIsValid = false
   }
 
-  if (isNaN(inputNum_purhase.value)) {
+  if (isNaN(inputNum_purhase.value) || inputNum_purhase.value == "") {
     inputNum_purhase.className = clearClassName(inputNum_purhase.className, addedClassName) + addedClassName;
     dataIsValid = false
   }
 
-  if (isNaN(inputType_BG.value)) {
+  if (isNaN(inputType_BG.value) || inputType_BG.value == "") {
     inputType_BG.className = clearClassName(inputType_BG.className, addedClassName) + addedClassName;
     dataIsValid = false
 
   }
 
-  if (isNaN(inputSum_warranty.value)) {
+  if (isNaN(inputSum_warranty.value) || inputSum_warranty.value == "") {
     inputSum_warranty.className = clearClassName(inputSum_warranty.className, addedClassName) + addedClassName;
     dataIsValid = false
   }
