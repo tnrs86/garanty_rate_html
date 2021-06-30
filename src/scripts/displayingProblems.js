@@ -39,6 +39,8 @@ export default function displayingProblems(problems = {}) {
       case highProblem:
         problemValueContainerClassName += " " + problemValueContainerClassName + "_red"
         break;
+      default:
+        return
     }
 
     problemValueContainer.className = problemValueContainerClassName

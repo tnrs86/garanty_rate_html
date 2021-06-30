@@ -3,7 +3,7 @@ mixin myButton(props={})
   if props.height
     -myStyle+=  "; height:" + props.height
   if props.width
-     -myStyle+=  "width:" + props.width
+     -myStyle+=  "; width:" + props.width
 
   div(class="my_button", id= props.id,   style= myStyle)= props.label 
   //-, value= props.label, form= props.formID) type="submit",
