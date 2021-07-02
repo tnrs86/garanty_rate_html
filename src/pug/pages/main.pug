@@ -33,11 +33,12 @@ html(lang="en")
           +textBox({name: "num_purhase", label: "№ закупки (ЕИС)", width: "60%", height: "40px", labelBoxGap: 5, totalWidth: "100%", formID: formID})
         //- .page__flex-wrapper
         +wrapper({m_bottom: 15})          
-          +dropList({name: "type_BG", label: "Тип БГ", width: "60%", height: "40px", labelBoxGap: 5, totalWidth: "100%", values: [1, 2, 3], formID: formID})          
+          +dropList({name: "type_BG", label: "Тип БГ", width: "60%", height: "40px", labelBoxGap: 5, totalWidth: "100%", 
+            values: ["", "на участие", "на исполнение", "на гарантийные обязательства", "на возврат аванса", "коммерческие"], formID: formID})          
         +wrapper({m_bottom: 15})          
           +textBox({name: "sum_warranty", label: "сумма гарантии:", width: "60%", height: "40px", labelBoxGap: 5, totalWidth: "100%", formID: formID})
         +wrapper({m_top: 5, m_bottom: 5})
-          +myButton({label: "Рассчитать гарантийный рейтинг", width: "100%", height: "35px", id: "btn_calc_rating"})
+          +myButton({label: "Рассчитать гарантийный рейтинг", width: "100%", id: "btn_calc_rating"})
      
       //- .page__borderContainer 
       +separator({width: "80%", margin_top: "10px", margin_bottom: "10px"})
@@ -53,8 +54,8 @@ html(lang="en")
       .page__container
         +wrapper({m_top: 20, m_bottom: 20})
           .page__flex-wrapper
-            +myButton({label: "Получить расшифровку", width: "40%", height: "35px", id: "btn_get_descript"})
-            +myButton({label: "Оставить заявку", width: "40%", height: "35px", formID: formID, id: "btn_send_application"})
+            +myButton({label: "Получить расшифровку", width: "40%", id: "btn_get_descript"})
+            +myButton({label: "Оставить заявку", width: "40%", formID: formID, id: "btn_send_application"})
       +separator({width: "80%", margin_top: "10px", margin_bottom: "10px"})
       #problemsContainer
   script window.init("http://httpbin.org/post")

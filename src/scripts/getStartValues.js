@@ -19,7 +19,7 @@ export default function getStartValues() {
     dataIsValid = false
   }
 
-  if (isNaN(inputType_BG.value) || inputType_BG.value == "") {
+  if (inputType_BG.value == "") {
     inputType_BG.className = clearClassName(inputType_BG.className, addedClassName) + addedClassName;
     dataIsValid = false
 

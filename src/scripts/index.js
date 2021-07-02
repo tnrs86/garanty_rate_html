@@ -34,6 +34,12 @@ export function init(serverURL) {
     inputSum_warranty.className = clearClassName(inputSum_warranty.className, addedClassName)
   })
 
+  let selectBG = document.getElementById("type_BG")
+
+  selectBG.addEventListener("click", ()=> {
+    selectBG.className = clearClassName(selectBG.className, addedClassName) 
+  })
+
   document.getElementById("btn_get_descript").addEventListener("click", () => {
 
     let sendMessage = getStartValues();
@@ -58,9 +64,6 @@ export function init(serverURL) {
         setRating((ansver["score"]))
         setIndicatorValue((ansver["score"]))
       } else {
-        let testValue = parseInt(Math.random() * 1000)
-        setRating(testValue)
-        setIndicatorValue(testValue)
       }
 
     })
